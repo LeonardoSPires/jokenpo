@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("https://picsum.photos/1600/900/?landscape");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    opacity: 90%;
+}
+h1 {
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 10px 10px 10px black;
+}
+#jo{
+    color: brown;
+}
+#ken{
+    color: cyan;
+}
+#po{
+    color: forestgreen ;
+}
+h3{
+    font-size: 25px;
+}
+#player{
+    color: blue;
+}
+#machine{
+    color: blueviolet;
+}
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+button {
+    width: 80px;
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+#rock {
+    background-color: brown;
+}
+
+#paper {
+    background-color: cyan;
+}
+
+#scissors {
+    background-color: forestgreen;
+}
+.result{
+    padding-top: 20px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.my-score span {
+    color: blue;
+}
+.machine-score span {
+    color:blueviolet;
+} 
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 { font-size: 6vw; }
+    h3 { font-size: 4.5vw; }
+    p { font-size: 3.5vw; }
+    button { font-size: 7vw; width: 70px; }
+    .container { width: 95%; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 7vw; }
+    h3 { font-size: 5vw; }
+    p { font-size: 4vw; }
+    button { font-size: 8vw; width: 60px; padding: 8px; }
+    .buttons { gap: 10px; }
+}
